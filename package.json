@@ -1,0 +1,31 @@
+{
+  "name": "nuxt-app",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "tinacms build && nuxt build",
+    "dev": "tinacms dev -c \"nuxt dev\"",
+    "generate": "tinacms build && nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "devDependencies": {
+    "@nuxt/devtools": "latest",
+    "@nuxtjs/tailwindcss": "^6.10.1",
+    "@tailwindcss/typography": "^0.5.10",
+    "@tinacms/cli": "1.5.31",
+    "nuxt": "^3.8.2",
+    "vue": "^3.3.12",
+    "vue-router": "^4.2.5"
+  },
+  "dependencies": {
+    "@nuxt/content": "^2.9.0",
+    "lodash-es": "^4.17.21",
+    "tinacms": "1.5.22"
+  },
+  "overrides": {
+    "@tinacms/cli": {
+      "use-deep-compare": "1.1.0"
+    }
+  }
+}
