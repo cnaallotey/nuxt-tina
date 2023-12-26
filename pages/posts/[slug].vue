@@ -9,7 +9,8 @@ post.author = await queryContent('authors', post.author).findOne()
 </script>
 
 <template>
-    <div class="w-full py-20">
+    <div class="w-full pb-20">
+    <AppNav />
         <div class="max-w-screen-md mx-auto px-4">
         <div class="w-full h-96 overflow-hidden">
             <img :src="`${post.image}`" class="w-full h-full object-cover object-center" :alt="post.title">
