@@ -11,5 +11,15 @@ export default defineNuxtConfig({
     config: {},
     injectPosition: 0,
     viewer: true
-  }
+  },
+  content: {
+    markdown: {
+      anchorLinks: false
+    },
+    highlight: {
+      theme: {
+        default: 'github-dark'
+      }
+    }
+  },
 })
